@@ -1,0 +1,180 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>SaRACmd</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net472</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>bin\Debug\net472\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>bin\Debug\net472\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client">
+      <HintPath>bin\Debug\net472\Microsoft.Data.Services.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Common">
+      <HintPath>bin\Debug\net472\Microsoft.Exchange.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Common.IL">
+      <HintPath>bin\Debug\net472\Microsoft.Exchange.Common.IL.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Compliance">
+      <HintPath>bin\Debug\net472\Microsoft.Exchange.Compliance.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Core.TimeZone">
+      <HintPath>bin\Debug\net472\Microsoft.Exchange.Core.TimeZone.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Data.Common">
+      <HintPath>bin\Debug\net472\Microsoft.Exchange.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Diagnostics">
+      <HintPath>bin\Debug\net472\Microsoft.Exchange.Diagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Exchange.Net">
+      <HintPath>bin\Debug\net472\Microsoft.Exchange.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client">
+      <HintPath>bin\Debug\net472\Microsoft.Identity.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.Broker">
+      <HintPath>bin\Debug\net472\Microsoft.Identity.Client.Broker.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Identity.Client.NativeInterop">
+      <HintPath>bin\Debug\net472\Microsoft.Identity.Client.NativeInterop.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Abstractions">
+      <HintPath>bin\Debug\net472\Microsoft.IdentityModel.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.Common.DataObject">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.Common.DataObject.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.Common.Logging">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.Common.Serialization">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.Common.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.Common.Utility">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.Common.Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.Analysis.Analyzers.Common">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.Analysis.Analyzers.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.Analysis.Analyzers.CommonStrings">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.Analysis.Analyzers.CommonStrings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.Analysis.Common">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.Analysis.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.Analysis.DataProviders">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.Analysis.DataProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.Analysis.Engine">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.Analysis.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.ASL.Contract">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.ASL.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.ASL.SaraModule.Contract">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.ASL.SaraModule.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.Common.Core">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.Common.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.DataObjects">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.DataObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Online.CSE.HRC.TDS.Contract">
+      <HintPath>bin\Debug\net472\Microsoft.Online.CSE.HRC.TDS.Contract.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Outlook.Services.Authentication.Contracts">
+      <HintPath>bin\Debug\net472\Microsoft.Outlook.Services.Authentication.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Outlook.Services.Contracts.Tracing">
+      <HintPath>bin\Debug\net472\Microsoft.Outlook.Services.Contracts.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Outlook.Services.Diagnostics.Contracts">
+      <HintPath>bin\Debug\net472\Microsoft.Outlook.Services.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Sara.AppPlugins">
+      <HintPath>bin\Debug\net472\Microsoft.Sara.AppPlugins.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Sara.Framework.Common">
+      <HintPath>bin\Debug\net472\Microsoft.Sara.Framework.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Sara.Framework.Common.UICore">
+      <HintPath>bin\Debug\net472\Microsoft.Sara.Framework.Common.UICore.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Sara.Framework.TaskEngine">
+      <HintPath>bin\Debug\net472\Microsoft.Sara.Framework.TaskEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Sara.Framework.TaskEngine.HRC">
+      <HintPath>bin\Debug\net472\Microsoft.Sara.Framework.TaskEngine.HRC.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Sara.Localization">
+      <HintPath>bin\Debug\net472\Microsoft.Sara.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Sara.Models">
+      <HintPath>bin\Debug\net472\Microsoft.Sara.Models.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Sara.Prism.PubSubEvents">
+      <HintPath>bin\Debug\net472\Microsoft.Sara.Prism.PubSubEvents.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client">
+      <HintPath>bin\Debug\net472\Microsoft.SharePoint.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime">
+      <HintPath>bin\Debug\net472\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Support.Diagnostics.Telemetry">
+      <HintPath>bin\Debug\net472\Microsoft.Support.Diagnostics.Telemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Support.DiagnosticsFramework.Contracts">
+      <HintPath>bin\Debug\net472\Microsoft.Support.DiagnosticsFramework.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Support.DiagnosticsFramework.Proxy">
+      <HintPath>bin\Debug\net472\Microsoft.Support.DiagnosticsFramework.Proxy.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Support.DiagnosticsUtilities.PIIScrubber">
+      <HintPath>bin\Debug\net472\Microsoft.Support.DiagnosticsUtilities.PIIScrubber.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Support.PortableDiagnostics">
+      <HintPath>bin\Debug\net472\Microsoft.Support.PortableDiagnostics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.ServiceRuntime">
+      <HintPath>bin\Debug\net472\Microsoft.WindowsAzure.ServiceRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>bin\Debug\net472\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource">
+      <HintPath>bin\Debug\net472\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management.Automation">
+      <HintPath>bin\Debug\net472\System.Management.Automation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>bin\Debug\net472\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial">
+      <HintPath>bin\Debug\net472\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsAzureEventSource">
+      <HintPath>bin\Debug\net472\WindowsAzureEventSource.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsAzureTelemetryEvents">
+      <HintPath>bin\Debug\net472\WindowsAzureTelemetryEvents.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

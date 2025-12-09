@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+<resheader name="resmimetype"><value>text/microsoft-resx</value></resheader><resheader name="version"><value>1.3</value></resheader><resheader name="reader"><value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><resheader name="writer"><value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value></resheader><data name="UnknownScenarioName" xml:space="preserve"><value>01: Error - Unknown scenario name</value></data>
+  <data name="CommandLineSwitches" xml:space="preserve"><value>Usage: {0} [&lt;options&gt;]
+
+Options:
+-S &lt;ScenarioName&gt;
+     Run &lt;ScenarioName&gt; from the following list of scenarios available to SaRACmd.exe:
+         ExpertExperienceAdminTask - Advanced Diagnostics \ Outlook \ Create a detailed report of my Outlook, Office, Windows and mailbox configuration 
+         OfficeScrubScenario - Office \ I have Office installed, but I'm having trouble uninstalling it
+         TeamsAddinScenario - Teams \ The Teams meeting option isn't shown or the Teams Meeting add-in doesn't load in Outlook
+         TeamsPresenceScenario - Teams \ User presence status information isn't shown or the Teams Meeting add-in doesn't load in Outlook
+         OfficeActivationScenario – Office \ I’ve installed a subscription version of Office, but I can’t activate it
+         OutlookCalendarCheckTask – Advance Diagnostics \ Outlook \ Create a detailed scan of my Outlook Calendar to identify and resolve issues 
+         OfficeSharedComputerScenario – Office\ I want to setup Office with shared computer activation on a computer or server in my organization.
+         ResetOfficeActivation – Command-line only scenario for resetting the Office Activation state.
+         OfficeRoiScanNormalScenario – Command-line only scenario for doing a normal Roi scan of the Office installation.
+         OfficeRoiScanFullScenario – Command-line only scenario for doing a full Roi scan of the Office installation.
+         OfficeSignInScenario – Command-line only scenario for detecting and fixing issues with Office sign-in.
+         OutlookConnectivityScenario – Command-line only scenario for detecting and fixing intermittent Outlook connection problems.
+         OutlookAuthCheckScenario – Command-line only scenario for fixing authentication/password issues with Outlook.
+         OfficeSetupScenario - Office \ Command-line scenario to install Office
+         OutlookEmailSetupScenario \ Command-line scenario to set up a Microsoft 365 email in Outlook
+         OutlookHangCrashScenario \ Command-line scenario to solve Outlook won't start/hang crash issues
+-CloseOffice 
+     The -CloseOffice switch is required to run the OfficeActivationScenario, OfficeSharedComputerScenario and ResetOfficeActivation scenarios.  Note, the –CloseOffice switch closes Office applications.  For additional information, please visit https://aka.ms/SaRA_CommandLineVersion 
+-RemoveSCA 
+     The -RemoveSCA switch is optional for the OfficeActivationScenario and OfficeSharedComputerScenario scenarios. This switch removes Shared Computer Activation (SCA) and configures non SCA activation for Office. For additional information, please visit https://aka.ms/SaRA_CommandLineVersion 
+-P &lt;Profile Name&gt; 
+     The -P switch is optional for the OutlookCalendarCheckTask scenario. Profile name is the Outlook profile that is scanned by the OutlookCalendarCheckTask scenario.
+-LogFolder &lt;Output Path&gt; 
+     The -LogFolder switch is optional for the ExpertExperienceAdminTask and OutlookCalendarCheckTask scenarios. If used, the -LogFolder switch forces SaraCmd.exe to output scenario-specific logs to the folder specified by &lt;Output Path&gt;
+-CloseOutlook
+     The -CloseOutlook switch is required to run the TeamsAddinScenario scenario.  Warning - this switch closes Outlook, if running.
+-OfficeVersion &lt;version&gt; 
+     The -OfficeVersion switch is optional for the OfficeScrubScenario scenario. If used, the -OfficeVersion specifies a &lt;version&gt; of Office to uninstall. For this switch, allowable values for &lt;version&gt; are: All, M365, 2021, 2019, 2016, 2013, 2010, or 2007. Note, the All value removes all Office versions from your machine.
+-OfflineScan
+     The -OfflineScan switch is optional and only works with the ExpertExperienceAdminTask scenario. This switch forces an offline scan of Outlook when the application is running.
+-HideProgress
+     The `-HideProgress` switch is optional and only works with the ExpertExperienceTask and OutlookCalendarCheckTask scenarios. The default feature is to always show progress. When this switch is used, it hides the progress display for these scenarios.
+-AcceptEula
+     Accept the End-User License Agreement (EULA) on behalf of the user on whose machine SaRACmd.exe is being run. It is required for all scenarios.
+     Use -DisplayEula to see the contents of the EULA.
+-DisplayEULA
+     Display the URL to the Microsoft Services Agreement whose terms govern the Microsoft Support Recovery Assistant usage.
+-Language
+     Language version of software to install, e.g. "en/us" for OfficeSetupScenario
+-Platform
+     Platform architecture to install, 32 or 64 for OfficeSetupScenario
+-NewProfileName
+     The -NewProfileName switch is optional for the OutlookEmailSetupScenario scenario. New name for outlook profile creation. 
+-SkipCreateProfile
+     The -SkipCreateProfile switch is optional for the OutlookAuthCheckScenario scenario. Avoids trying to create a profile with the current profile name
+-Help
+     Display a link to online content (for additional details).
+-?
+     Display information on all supported switches.
+
+Examples (minimum switches needed): 
+    SaRACmd.exe -S ExpertExperienceAdminTask -AcceptEula
+    SaRACmd.exe -S OfficeScrubScenario -AcceptEula
+    SaRACmd.exe -S TeamsAddinScenario -AcceptEula -CloseOutlook
+    SaRACmd.exe -S TeamsPresenceScenario -AcceptEula -CloseOutlook
+    SaRACmd.exe -S OfficeSharedComputerScenario -AcceptEula -CloseOffice
+    SaRACmd.exe -S OutlookCalendarCheckTask -AcceptEula
+    SaRACmd.exe -S OfficeActivationScenario -AcceptEula -CloseOffice
+    SaRACmd.exe -S ResetOfficeActivation -AcceptEula -CloseOffice
+    SaRACmd.exe -S OfficeRoiScanNormalScenario -AcceptEula
+    SaRACmd.exe -S OfficeRoiScanFullScenario -AcceptEula
+    SaRACmd.exe -S OfficeSignInScenario -AcceptEula
+    SaRACmd.exe -S OutlookConnectivityScenario -AcceptEula
+    SaRACmd.exe -S OutlookAuthCheckScenario -AcceptEula
+    SaRACmd.exe -S OfficeSetupScenario -AcceptEula -Language English -Platform 64
+    SaRACmd.exe -S OutlookEmailSetupScenario -AcceptEula
+    SaRACmd.exe -S OutlookHangCrashScenario -AcceptEula
+</value></data>
+  <data name="CommandLineHelpText" xml:space="preserve"><value>For additional information and troubleshooting assistance please visit -  https://aka.ms/SaRA_CommandLineVersion </value></data>
+  <data name="MissingUserFolderPath" xml:space="preserve"><value>The &lt;folder path&gt; parameter is required when the -LogFolder switch is used.</value></data>
+  <data name="UnidentifiedArgumentFound" xml:space="preserve"><value>01: Unidentified Argument Found</value></data>
+  <data name="RunningScenario" xml:space="preserve"><value>Running Scenario</value></data>
+  <data name="DisplayProgress" xml:space="preserve"><value>If Outlook is running, do not close Outlook until this scan is finished.</value></data>
+  <data name="MissingOfficeVersion" xml:space="preserve"><value>The &lt;version&gt; parameter is required when the -OfficeVersion switch is used.</value></data>
+  <data name="UnexpectedError" xml:space="preserve"><value>01: Unexpected error - please try the full UI version of the Support and Recovery Assistant</value></data>
+  <data name="InvalidUserFolderPath" xml:space="preserve"><value>01: The folder specified by the {0} parameter either doesn't exist or is not writeable.</value></data>
+  <data name="ScanningOutlook" xml:space="preserve"><value>Scanning Outlook...</value></data>
+  <data name="ExpertExperienceAdminTask" xml:space="preserve"><value>ExpertExperienceAdminTask</value></data>
+  <data name="InvalidOfflineScanParameter" xml:space="preserve"><value>The -OfflineScan switch does not accept any parameters.</value></data>
+  <data name="PressAnykeyToContinue" xml:space="preserve"><value>
+
+Press any key to continue . . .</value></data>
+  <data name="ExpiredMessage" xml:space="preserve"><value>11: Your version of SaRACmd.exe has expired. For information on the latest version, see http://AKA.MS/SaRA_CommandLineVersion</value></data>
+  <data name="StartingCommandLineMessage" xml:space="preserve"><value>Starting Microsoft Support and Recovery Assistant Command Line</value></data>
+  <data name="OutlookCalendarCheckTask" xml:space="preserve"><value>OutlookCalendarCheckTask</value></data>
+  <data name="RunScenarioMissing" xml:space="preserve"><value>01: Error - Run Scenario Missing</value></data>
+  <data name="M365" xml:space="preserve"><value>Microsoft 365</value></data>
+  <data name="CommandLineAcceptEULAMissing" xml:space="preserve"><value>01: Please provide -AcceptEula to continue with this scenario. For additional information, please visit https://aka.ms/SaRA_CommandLineVersion </value></data>
+  </root>
